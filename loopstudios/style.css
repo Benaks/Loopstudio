@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ h3 , h2{
+    color:hsl(233, 26%, 24%) ;
+}
+
+.first-section{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 98%);
+    background-image: url("/desktop/image-hero.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right ;
+    
+}
+.first-section p{
+    color: hsl(233, 8%, 62%);
+
+}
+nav{
+    display: flex;
+    padding: 2% 3%;
+    height:100px;
+    padding-top: 20px;
+    justify-content: right;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+    z-index: 9999;
+}
+#hamburger{
+    display: none;
+}
+.nav-links ul{
+    height: 100%;
+    
+    
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    height: 100%;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px 12px;
+    height: 100%;
+    place-items:calc();
+    justify-content: center;
+    
+}
+
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+    padding-top: 40%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    border: none;
+    padding: 9px 9px;
+    border: 2px solid black;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+
+.hero-btn:hover{
+    border:1px solid ;
+    transition: 1s;
+}
+.main{
+    display: flex;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    margin-left: 100px;
+}
+.left p{
+    font-size: 70px;
+    display: flex;
+    text-align: left;
+    color: white;
+    font-weight: 100;
+    justify-content: left;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 20px;
+    padding-right: 0px;
+
+
+}
+
+.second-section{
+    height: 100vh;
+    width: 100vw;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    padding: 100px ;
+}
+.image{
+    height: 50vh;
+    width: 50vw;
+    background-image: url("/desktop/image-interactive.jpg");
+    background-size: 100% 100%;
+}
+.text{
+    height: 40vh;
+    width: 50vw;
+    padding: 60px;
+    margin-top: 100px;
+    margin-left: -100px;
+    position: relative;
+    background-color: white;
+}
+.leader{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.founded{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.grid{
+    width: 100vw;
+    padding: 100px;
+    display: flex;
+    padding-top: 0;
+    margin-bottom: 10vw;
+    flex-direction: column;
+}
+.creations{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.creations p{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.one{
+    background-image: url("/desktop/image-deep-earth.jpg");
+    background-size: 100% 100%;
+}
+.two{
+    background-image: url("/desktop/image-night-arcade.jpg");
+    background-size: 100% 100%;
+}
+.three{
+    background-image: url("/desktop/image-soccer-team.jpg");
+    background-size: 100% 100%;
+}
+.four{
+    background-image: url("/desktop/image-grid.jpg");
+    background-size: 100% 100%;
+}
+.five{
+
+    background-image: url("/desktop/image-from-above.jpg");
+    background-size: 100% 100%;
+}
+.six{
+    background-image: url("/desktop/image-pocket-borealis.jpg");
+    background-size: 100% 100%;
+}
+.seven{
+    background-image: url("/desktop/image-curiosity.jpg");
+    background-size: 100% 100%;
+}
+.eight{
+    background-image: url("/desktop/image-fisheye.jpg");
+    background-size: 100% 100%;
+}
+
+.one:hover{
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/desktop/image-deep-earth.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position:relative;
+}
+.two:hover{
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/desktop/image-night-arcade.jpg");
+    background-size: 100% 100%;
+    position:relative;
+    background-repeat: no-repeat;
+}
+.three:hover{
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/desktop/image-soccer-team.jpg");
+    background-size: 100% 100%;
+    position:relative;
+}
+.four:hover{
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/desktop/image-grid.jpg");
+    background-size: 100% 100%;
+    position:relative;
+}
+.five:hover{
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/desktop/image-from-above.jpg");
+    background-size: 100% 100%;
+    position:relative;
+}
+.six:hover{
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/desktop/image-pocket-borealis.jpg");
+    background-size: 100% 100%;
+    position:relative;
+}
+.seven:hover{
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/desktop/image-curiosity.jpg");
+    background-size: 100% 100%;
+    position:relative;
+}
+.eight:hover{
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/desktop/image-fisheye.jpg");
+    background-size: 100% 100%;
+    position:relative;
+}
+.grid-items{
+    display: flex;
+    align-items: end;
+}
+.grid-items:hover{
+    color: black;
+    cursor: pointer;
+    background-image:(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/desktop/image-curiosity.jpg);
+
+}
+.grid-items p:hover{
+   color: black;
+   
+}
+.grid-items p{
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    width: 100%;
+}
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 20px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+
+}
+
+
+footer{
+    height: 20vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px 30px 100px;
+    background-color:black;
+}
+.footer-left{
+    display: flex;
+    width: 50%;
+    color: white;
+    justify-content: space-between;
+}
+.footer-links{
+    display: flex;
+}
+.footer-links a{
+    margin-right: 20px;
+}
+.footer-left img:hover{
+    color:hsl(136, 65%, 51%) ;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icon a{
+    margin-right: 20px;
+}
+.a a{
+    color: white;
+    text-decoration: none;
+}
+.a img{
+    width: 50%;
+}
+.a a  :hover{
+    color: hsl(136, 65%, 51%);
+}
+
+@media(max-width:712px){
+    body{
+        width: 100vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+     h3 , h2{
+        color:hsl(233, 26%, 24%) ;
+    }
+    
+    .first-section{
+        height: 100vh;
+        width: 100vw;
+        padding: 10vw;
+        padding-top: 0px;
+        background-color: hsl(0, 0%, 98%);
+        background-image: url("/mobile/image-hero.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: right ;
+    
+        
+    }
+    .logo{
+        width: 100px;
+        display: flex;
+        align-self:flex-start;
+    }
+    
+    #hamburger{
+        display:block;
+        margin-left: -10vw;
+    }
+    #myLinks{
+        margin-top:10vh;
+        flex-direction: column;
+        justify-content: space-around;
+        position:relative;
+        margin-left: -25vw;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 90vh;
+        width: 80vw;
+        align-self: center;
+        justify-self: center;
+        padding-top: 50px;
+        transform: translateX(100vw);
+        background:rgb(118, 6, 192);
+        transition: transform 0.3s ease-in-out;
+    }
+    #myLinks.open{
+        transform: translateX(0);
+    }
+    #myLinks li{
+        width: 100%;
+        height: 10vh;
+        
+    }
+    #myLinks li a {
+        color: rgb(240, 231, 231);
+        font-size: 4vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .first-section p{
+        color: hsl(233, 8%, 62%);
+    
+    }
+    nav{
+        display: flex;
+        padding: 2% 3%;
+        height:100px;
+        padding-top: 0px;
+        justify-content: right;
+        align-items: center;
+        justify-content: space-between;
+        z-index:5;
+    }
+    .nav-links ul li a{
+        padding: 30px;
+    }
+
+    .hero-btn{
+        display:inline-block;
+        text-decoration: none;
+        color:black;
+        background-color: white;
+        border: none;
+        display: none;
+        padding: 9px 9px;
+        border: 2px solid black;
+        position: relative;
+        cursor: pointer;
+        width: 100px;
+        height: 40px;
+    }
+    
+    
+    .hero-btn:hover{
+        border:1px solid ;
+        transition: 1s;
+    }
+    .main{
+        display: flex;
+        width: 100vw;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 100vh;
+        margin-left:0px;
+    }
+    .left p{
+        font-size: 30px;
+        width: 80vw;
+        display: flex;
+        text-align: left;
+        color: white;
+        font-weight: 100;
+        justify-content: left;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        padding: 20px;
+        padding-right: 0px;
+    
+    
+    }
+    
+    .second-section{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    
+    }
+    .image{
+        height: 40vh;
+        width: 80vw;
+        margin: 10vw;
+        background-image: url("/desktop/image-interactive.jpg");
+        background-size: 100% 100%;
+    }
+    .text{
+        height: 60vh;
+        width: 100vw;
+        margin: 0;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        text-align: center;
+        background-color: white;
+    }
+    .leader{
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .founded{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .grid{
+        width:80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        padding: 0;
+        display: flex;
+        padding-top: 0;
+        
+        flex-direction: column;
+    }
+    .creations{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-self: center;
+        justify-content:center;
+    }
+    .creations p{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .one:hover{
+        color: black;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/mobile/image-deep-earth.jpg");
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        position:relative;
+    }
+    .two:hover{
+        color: black;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/mobile/image-night-arcade.jpg");
+        background-size: 100% 100%;
+        position:relative;
+        background-repeat: no-repeat;
+    }
+    .three:hover{
+        color: black;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/mobile/image-soccer-team.jpg");
+        background-size: 100% 100%;
+        position:relative;
+    }
+    .four:hover{
+        color: black;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/mobile/image-grid.jpg");
+        background-size: 100% 100%;
+        position:relative;
+    }
+    .five:hover{
+        color: black;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/mobile/image-from-above.jpg");
+        background-size: 100% 100%;
+        position:relative;
+    }
+    .six:hover{
+        color: black;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/mobile/image-pocket-borealis.jpg");
+        background-size: 100% 100%;
+        position:relative;
+    }
+    .seven:hover{
+        color: black;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/mobile/image-curiosity.jpg");
+        background-size: 100% 100%;
+        position:relative;
+    }
+    .eight:hover{
+        color: black;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(240, 241, 241, 0.5),rgba(243, 243, 245, 0.5)),url("/mobile/image-fisheye.jpg");
+        background-size: 100% 100%;
+        position:relative;
+    }
+    .grid-items{
+        display: flex;
+        align-items: end;
+        width: 80vw;
+    }
+    
+    .grid-items p:hover{
+       color: black;
+       
+    }
+    .grid-items p{
+        color: white;
+        font-size: 30px;
+        padding: 30px;
+        width: 100%;
+    }
+    .grid-container{
+        display: grid;
+        width: 80vw;
+        height: 100%;
+        grid-gap: 20px;
+        margin: 0vw;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(8 , 400px);
+    
+    }
+    
+    
+    footer{
+        width: 100vw;
+        padding: 10vw;
+
+        height:fit-content;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-color:black;
+    }
+    .footer-left{
+        display: flex;
+        width: 80vw;
+        text-align: center;
+        align-items: center;
+        color: white;
+        justify-content: space-between;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer-links a{
+        margin-right: 20px;
+    }
+    .footer-left img{
+        width: 80vw;
+    }
+    .a{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+    }
+    .footer-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .icon{
+        margin-bottom: 20px;
+    }
+    .icon a{
+        margin-right: 20px;
+    }
+    .a a{
+        color: white;
+        padding-bottom: 20px;
+        text-decoration: none;
+    }
+    .a img{
+        width: 200px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+    .a a  :hover{
+        color: hsl(136, 65%, 51%);
+    } 
+}
